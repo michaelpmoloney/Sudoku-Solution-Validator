@@ -33,7 +33,7 @@ Disadvantage: This is just a linear run-through of the code. This will not take 
 
 /*******************************************************************************************************/
 
-High Level Description
+High Level Description:
 Threading splits the work up, but the threads still share resources. This was useful in the program because I was able to create a 2D array from the input file and assign threads to handle different parts of the array at the same time. My program first checks if there is an input argument. If there is one, the file is read into a 2D array and then displayed. The 9x9 Sudoku is split into 11 sections(all rows,all columns, and 9 subgrids) and their coordinates are stored in 11 different structs that are kept in an array. 11 threads are 
 then created, and these structs are each set as an input for a thread. The three thread methods take the struct's coordinates and create a 9 element array, whether it be a row, column, or a subgrid. This extracted array is then sorted and compared against a global array variable containing 0 thru 9. If the two arrays match then 1 is returned to an array of size 11 that all threads have access to. Finally, the array of size 11 is checked to see if all indexes are 1. If they are, then the Sudoku is valid. If they are not, then the Sudoku is invalid.
 
@@ -41,8 +41,6 @@ then created, and these structs are each set as an input for a thread. The three
 
 Output of Program:
 
-![alt text](https://raw.githubusercontent.com/michaelpmoloney/Sudoku-Solution-Validator
-/master/Moloney_grid1.png)
+![alt text](https://raw.githubusercontent.com/michaelpmoloney/Sudoku-Solution-Validator/blob/master/Moloney_grid1.png)
 
-![alt text](https://raw.githubusercontent.com/michaelpmoloney/Sudoku-Solution-Validator
-/master/Moloney_grid2.png)
+![alt text](https://raw.githubusercontent.com/michaelpmoloney/Sudoku-Solution-Validator/blob/master/Moloney_grid2.png)
