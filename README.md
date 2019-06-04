@@ -41,6 +41,6 @@ then created, and these structs are each set as an input for a thread. The three
 
 Output of Program:
 
-![alt text](https://raw.githubusercontent.com/michaelpmoloney/Sudoku-Solution-Validator/blob/master/Moloney_grid1.png)
+![alt text](https://raw.githubusercontent.com/michaelpmoloney/Sudoku-Solution-Validator/master/Moloney_grid1.png)
 
-![alt text](https://raw.githubusercontent.com/michaelpmoloney/Sudoku-Solution-Validator/blob/master/Moloney_grid2.png)
+![alt text](https://raw.githubusercontent.com/michaelpmoloney/Sudoku-Solution-Validator/master/Moloney_grid2.png)
